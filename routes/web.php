@@ -6,5 +6,5 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/', 'AboutController@index')->name('about');
-Route::get('/', 'ContactController@index')->name('contact');
+Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/contact', 'ContactController@index')->name('contact');
