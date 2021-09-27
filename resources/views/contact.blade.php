@@ -4,6 +4,15 @@
 
 @section('content')
 <h1>Страница контактов</h1>
+@if($errors->any())
+<div class="alert alert-danger">
+	<ul>
+		@foreach($errors->all() as $error)
+		<li>{{$error}}</li>
+		@endforeach
+	</ul>
+</div>
+@endif
 <form action="{{route('contact-form')}}" method="post" class='col-6'>
 	@csrf
 	<div class="form-group mt-3">

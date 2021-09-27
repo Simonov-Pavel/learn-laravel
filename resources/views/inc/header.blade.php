@@ -1,4 +1,5 @@
-<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom
+mt-3">
 	<a href="/" class="d-flex align-items-center text-dark text-decoration-none">
 		<span class="fs-4">Laravel</span>
 	</a>
