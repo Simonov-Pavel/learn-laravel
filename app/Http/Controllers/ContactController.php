@@ -10,4 +10,9 @@ class ContactController extends Controller
 	{
 		return view('contact');
 	}
+
+	public function submit()
+	{
+		return 'okay';
+	}
 }
