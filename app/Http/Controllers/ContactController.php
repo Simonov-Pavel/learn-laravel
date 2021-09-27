@@ -23,6 +23,6 @@ class ContactController extends Controller
 
 		$contact->save();
 
-		return redirect()->route('home')->session('success', 'Сообщение отправленно успешно');
+		return redirect()->route('home')->with('success', 'Сообщение отправленно успешно');
 	}
 }

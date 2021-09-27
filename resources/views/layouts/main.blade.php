@@ -12,6 +12,7 @@
 
 <body>
 	@include('inc.header')
+	@include('inc.message')
 
 	@yield('content')
 
