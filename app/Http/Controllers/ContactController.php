@@ -38,6 +38,7 @@ class ContactController extends Controller
 
 	public function messageEdit($id)
 	{
+		return view('messageEdit', ['message' => Contact::find($id)]);
 	}
 
 	public function messageDelete($id)
