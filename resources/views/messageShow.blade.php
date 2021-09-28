@@ -7,6 +7,6 @@
 <p>{{$message->message}}</p>
 <p>{{$message->name}} - {{$message->email}}</p>
 <p>{{$message->created_at}}</p>
-<a href="" class="btn btn-success">Редактировать</a>
-<a href="" class="btn btn-danger">Удалить</a>
+<a href="{{route('message-edit', $item->id)}}" class="btn btn-success">Редактировать</a>
+<a href="{{route('message-delete', $item->id)}}" class="btn btn-danger">Удалить</a>
 @endsection
