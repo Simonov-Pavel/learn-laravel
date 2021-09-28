@@ -5,7 +5,7 @@
 @section('content')
 <h1>Редактирование сообщения - {{$message->subject}}</h1>
 
-<form action="{{route('contact-form')}}" method="post" class='col-6'>
+<form action="{{route('message-edit-submit',$message->id)}}" method="post" class='col-6'>
 	@csrf
 	<div class="form-group mt-3">
 		<label for="name">Name</label>
