@@ -35,4 +35,14 @@ class ContactController extends Controller
 	{
 		return view('messageShow', ['message' => Contact::find($id)]);
 	}
+
+	public function messageEdit($id)
+	{
+	}
+
+	public function messageDelete($id)
+	{
+		Contact::find($id)->delete();
+		return redirect()->route('contact-data')->with('success', 'Сообщение удалено успешно');
+	}
 }
