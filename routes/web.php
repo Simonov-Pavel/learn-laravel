@@ -11,3 +11,5 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/contact/message', 'ContactController@allData')->name('contact-data');
 Route::post('/contact/submit', 'ContactController@submit')->name('contact-form');
 Route::get('/contact/message/{id}', 'ContactController@messageShow')->name('message-show');
+Route::get('/contact/message/edit/{id}', 'ContactController@messageEdit')->name('message-edit');
+Route::get('/contact/message/delete/{id}', 'ContactController@messageDelete')->name('message-delete');
