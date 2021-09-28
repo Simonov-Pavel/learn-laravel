@@ -30,4 +30,9 @@ class ContactController extends Controller
 	{
 		return view('messages', ['data' => Contact::all()]);
 	}
+
+	public function messageShow($id)
+	{
+		return view('messageShow', ['message' => Contact::find($id)]);
+	}
 }
